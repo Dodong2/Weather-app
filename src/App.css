@@ -183,7 +183,7 @@ body {
   padding: 10px;
 }
 
-.card1 {
+.card1, .card2, .card3 {
   background-color: var(--white);
   width: 70px;
   font-size: 2em;
@@ -197,6 +197,21 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--blue);
 }
+.card2 {
+  color: var(--red);
+}
+.card1 {
+  color: var(--green);
+}
+.card1:hover {
+  filter: drop-shadow(0 0 2em var(--green));
+} 
+.card2:hover {
+  filter: drop-shadow(0 0 2em var(--red));
+} 
+.card3:hover {
+  filter: drop-shadow(0 0 2em var(--blue));
+} 
 .card p {
   font-size: .3em;
 }
@@ -205,6 +220,40 @@ body {
 }
 .card .Icon2 {
   color: var(--red);
+}
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  --c:no-repeat linear-gradient(#25b09b 0 0);
+  background:
+    var(--c) center/100% 10px,
+    var(--c) center/10px 100%;
+}
+.loader:before {
+  content:'';
+  position: absolute;
+  inset: 0;
+  background:
+    var(--c) 0    0,
+    var(--c) 100% 0,
+    var(--c) 0    100%,
+    var(--c) 100% 100%;
+  background-size: 15.5px 15.5px;
+  animation: l16 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+@keyframes l16 {
+   33%  {inset:-10px;transform: rotate(0deg)}
+   66%  {inset:-10px;transform: rotate(90deg)}
+   100% {inset:0    ;transform: rotate(90deg)}
 }
 
 @media only screen and (max-width: 767px) {
@@ -216,5 +265,6 @@ body {
     padding: 20px;
     max-width: 300px;
     width: 100%;
+    margin-bottom: 10px;
   }
 }

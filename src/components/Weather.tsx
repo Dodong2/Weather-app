@@ -92,8 +92,8 @@ const Weather: React.FC = () => {
                 </div><br/>
                 <div className="card-footer">
                     <div className='card1'><FaWind className='Icon1'/><p>Wind Speed</p>{isWeather.wind && (isWeather.wind.speed)}</div>
-                    <div className='card1'><WiDayCloudyGusts className='Icon2'/><p>Gust</p>{isWeather.wind && (isWeather.wind.gust)}</div>
-                    <div className='card1'><FaWater/><p>Sea level</p>{isWeather.main && (isWeather.main.sea_level)}</div>
+                    <div className='card2'><WiDayCloudyGusts className='Icon2'/><p>Gust</p>{isWeather.wind && (isWeather.wind.gust)}</div>
+                    <div className='card3'><FaWater/><p>Sea level</p>{isWeather.main && (isWeather.main.sea_level)}</div>
                 </div>
             </div>
             </div>

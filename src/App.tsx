@@ -7,7 +7,9 @@ function App() {
 
   return (
     <>
-    <Suspense fallback={<h1>Loading</h1>}>
+    <Suspense fallback={<div className='load'>
+      <div className='loader'></div>
+    </div>}>
     <Weather/>
     </Suspense>
     </>
