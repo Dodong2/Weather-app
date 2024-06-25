@@ -262,16 +262,6 @@ body {
   }
 }
 
-.creator {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgba(255, 255, 255, 0.479);
-  font-weight: 900;
-}
-
 @media only screen and (max-width: 767px) {
   .main-container {
     width: 200px;

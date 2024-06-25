@@ -98,7 +98,6 @@ const Weather: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="creator">created by castar</div>
         </>
     );
 }
