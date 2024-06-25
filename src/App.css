@@ -72,8 +72,8 @@ body {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: .8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
   font-weight: 600;
   border: 1px solid var(--blue);
   color: var(--blue);
@@ -86,13 +86,13 @@ body {
 .search-box button {
   padding: 11px;
   border: none;
-  transition: all ease .3s;
-  background-color: var(--blue);  
+  transition: all ease 0.3s;
+  background-color: var(--blue);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 900;
   color: var(--white);
   width: 100px;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 .search-box button:hover {
   filter: drop-shadow(0 0 2em var(--blue));
@@ -133,15 +133,16 @@ body {
   padding: 20px;
   gap: 50px;
 }
-.temperature .fahrenheit, .temperature .celsius {
+.temperature .fahrenheit,
+.temperature .celsius {
   border-radius: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1em;
   font-weight: 600;
   box-shadow: 1px 1px 5px black;
   cursor: pointer;
   will-change: filter;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 .temperature .celsius {
   background-color: var(--blue);
@@ -154,7 +155,7 @@ body {
 }
 .temperature .fahrenheit:hover {
   filter: drop-shadow(0 0 2em var(--yellow));
-} 
+}
 .temperature .celsius:hover {
   filter: drop-shadow(0 0 2em var(--blue));
 }
@@ -183,7 +184,9 @@ body {
   padding: 10px;
 }
 
-.card1, .card2, .card3 {
+.card1,
+.card2,
+.card3 {
   background-color: var(--white);
   width: 70px;
   font-size: 2em;
@@ -194,7 +197,7 @@ body {
   padding: 10px 10px 10px 10px;
   box-shadow: 1px 1px 5px black;
   border-radius: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--blue);
 }
 .card2 {
@@ -205,15 +208,15 @@ body {
 }
 .card1:hover {
   filter: drop-shadow(0 0 2em var(--green));
-} 
+}
 .card2:hover {
   filter: drop-shadow(0 0 2em var(--red));
-} 
+}
 .card3:hover {
   filter: drop-shadow(0 0 2em var(--blue));
-} 
+}
 .card p {
-  font-size: .3em;
+  font-size: 0.3em;
 }
 .card .Icon1 {
   color: var(--green);
@@ -233,27 +236,40 @@ body {
   width: 40px;
   height: 40px;
   position: relative;
-  --c:no-repeat linear-gradient(#25b09b 0 0);
-  background:
-    var(--c) center/100% 10px,
-    var(--c) center/10px 100%;
+  --c: no-repeat linear-gradient(#25b09b 0 0);
+  background: var(--c) center/100% 10px, var(--c) center/10px 100%;
 }
 .loader:before {
-  content:'';
+  content: "";
   position: absolute;
   inset: 0;
-  background:
-    var(--c) 0    0,
-    var(--c) 100% 0,
-    var(--c) 0    100%,
-    var(--c) 100% 100%;
+  background: var(--c) 0 0, var(--c) 100% 0, var(--c) 0 100%, var(--c) 100% 100%;
   background-size: 15.5px 15.5px;
-  animation: l16 1.5s infinite cubic-bezier(0.3,1,0,1);
+  animation: l16 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
 }
 @keyframes l16 {
-   33%  {inset:-10px;transform: rotate(0deg)}
-   66%  {inset:-10px;transform: rotate(90deg)}
-   100% {inset:0    ;transform: rotate(90deg)}
+  33% {
+    inset: -10px;
+    transform: rotate(0deg);
+  }
+  66% {
+    inset: -10px;
+    transform: rotate(90deg);
+  }
+  100% {
+    inset: 0;
+    transform: rotate(90deg);
+  }
+}
+
+.creator {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(255, 255, 255, 0.479);
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 767px) {
